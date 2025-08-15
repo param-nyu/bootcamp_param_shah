@@ -9,3 +9,5 @@ __pycache__/
 .env
 ssh key post exposure
 ssh key post exposure.pub
+
+.ipynb_checkpoints
