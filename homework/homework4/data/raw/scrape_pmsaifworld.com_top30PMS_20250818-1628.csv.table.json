@@ -1,0 +1,103 @@
+{
+  "columns": [
+    {
+      "field": "Strategy",
+      "title": "Strategy",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "string",
+      "headerSort": true,
+      "width": 416
+    },
+    {
+      "field": "AUM",
+      "title": "AUM",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 95
+    },
+    {
+      "field": "Relative Aplha (1Y)",
+      "title": "Relative Aplha (1Y)",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 179
+    },
+    {
+      "field": "% of +ve months (Fund Data)",
+      "title": "% of +ve months (Fund Data)",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 247
+    },
+    {
+      "field": "Alpha (1Y)",
+      "title": "Alpha (1Y)",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 124
+    },
+    {
+      "field": "Beta (1Y)",
+      "title": "Beta (1Y)",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 117
+    },
+    {
+      "field": "SD (1Y)",
+      "title": "SD (1Y)",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 106
+    },
+    {
+      "field": "Sharpe Ratio (1Y)",
+      "title": "Sharpe Ratio (1Y)",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 170
+    },
+    {
+      "field": "Alpha (SI)",
+      "title": "Alpha (SI)",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 121
+    },
+    {
+      "field": "Info Ratio (SI)",
+      "title": "Info Ratio (SI)",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 145
+    },
+    {
+      "field": "Consistency Ratio",
+      "title": "Consistency Ratio",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 174
+    }
+  ]
+}

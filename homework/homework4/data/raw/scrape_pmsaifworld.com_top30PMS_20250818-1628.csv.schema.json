@@ -1,0 +1,62 @@
+{
+  "fields": [
+    {
+      "name": "Strategy",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "AUM",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "Relative Aplha (1Y)",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "% of +ve months (Fund Data)",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "Alpha (1Y)",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "Beta (1Y)",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "SD (1Y)",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "Sharpe Ratio (1Y)",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "Alpha (SI)",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "Info Ratio (SI)",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "Consistency Ratio",
+      "type": "number",
+      "format": "default"
+    }
+  ],
+  "missingValues": [
+    ""
+  ]
+}
