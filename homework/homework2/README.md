@@ -1,1 +1,0 @@
-This project is set up to demonstrate a reproducible Python environment for the bootcamp. It includes environment management, secrets configuration, and a basic Jupyter check.

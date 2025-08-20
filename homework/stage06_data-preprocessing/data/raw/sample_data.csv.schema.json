@@ -1,0 +1,37 @@
+{
+  "fields": [
+    {
+      "name": "age",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "income",
+      "type": "any",
+      "format": "default"
+    },
+    {
+      "name": "score",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "zipcode",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "city",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "extra_data",
+      "type": "any",
+      "format": "default"
+    }
+  ],
+  "missingValues": [
+    ""
+  ]
+}
