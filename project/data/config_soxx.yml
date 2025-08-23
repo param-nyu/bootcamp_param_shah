@@ -1,0 +1,14 @@
+candidates:
+- AVGO
+- TSM
+- AMD
+- INTC
+- QCOM
+- TXN
+- ASML
+- MU
+- ADI
+end: null
+etf: SOXX
+price_field: Adj Close
+start: '2010-01-01'
