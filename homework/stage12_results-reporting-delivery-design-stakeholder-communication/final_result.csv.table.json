@@ -1,0 +1,94 @@
+{
+  "columns": [
+    {
+      "field": "scenario",
+      "title": "scenario",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "string",
+      "headerSort": true,
+      "width": 113
+    },
+    {
+      "field": "return",
+      "title": "return",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 97
+    },
+    {
+      "field": "volatility",
+      "title": "volatility",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 111
+    },
+    {
+      "field": "sharpe",
+      "title": "sharpe",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 102
+    },
+    {
+      "field": "assumption",
+      "title": "assumption",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "string",
+      "headerSort": true,
+      "width": 132
+    },
+    {
+      "field": "value",
+      "title": "value",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "string",
+      "headerSort": true,
+      "width": 92
+    },
+    {
+      "field": "Category",
+      "title": "Category",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "string",
+      "headerSort": true,
+      "width": 117
+    },
+    {
+      "field": "MetricA",
+      "title": "MetricA",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 158
+    },
+    {
+      "field": "MetricB",
+      "title": "MetricB",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 154
+    },
+    {
+      "field": "Date",
+      "title": "Date",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "string",
+      "headerSort": true,
+      "width": 91
+    }
+  ]
+}

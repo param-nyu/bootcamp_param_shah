@@ -1,0 +1,57 @@
+{
+  "fields": [
+    {
+      "name": "scenario",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "return",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "volatility",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "sharpe",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "assumption",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "Category",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "MetricA",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "MetricB",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "Date",
+      "type": "date",
+      "format": "default"
+    }
+  ],
+  "missingValues": [
+    ""
+  ]
+}
