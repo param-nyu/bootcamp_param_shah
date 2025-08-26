@@ -1,11 +1,7 @@
 import streamlit as st
 import pandas as pd
-from bokeh.plotting import figure
-from bokeh.models import ColumnDataSource, HoverTool
-from bokeh.transform import factor_cmap
-from bokeh.palettes import Category10
-from bokeh.models.widgets import Select
-from bokeh.layouts import column
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 # === Load Data ===
 data = pd.DataFrame({
@@ -21,8 +17,6 @@ data = pd.DataFrame({
     "Date": pd.to_datetime(["2025-02-01", "2025-02-02", "2025-02-03"])
 })
 
-source = ColumnDataSource(data)
-
 # === Executive Summary ===
 st.title("Scenario Analysis Dashboard")
 st.subheader("Executive Summary")
@@ -34,40 +28,36 @@ st.write("""
 
 # === Visualizations ===
 st.subheader("Visualizations")
+col1, col2 = st.columns(2)
 
 # --- Bar chart: Return by Scenario ---
-p1 = figure(x_range=data["scenario"], height=350, title="Return by Scenario",
-            toolbar_location=None, tools="")
-p1.vbar(x='scenario', top='return', width=0.6, source=source,
-        fill_color=factor_cmap('scenario', palette=Category10[3], factors=data["scenario"]))
-p1.yaxis.axis_label = "Return"
-st.bokeh_chart(p1, use_container_width=True)
+with col1:
+    plt.figure(figsize=(5, 4))
+    sns.barplot(data=data, x="scenario", y="return", palette="Set2")
+    plt.title("Return by Scenario")
+    st.pyplot(plt.gcf())
+    plt.clf()
 
 # --- Scatter: Risk-Return Tradeoff ---
-p2 = figure(height=350, title="Risk-Return Tradeoff",
-            x_axis_label='Volatility', y_axis_label='Return', tools="pan,wheel_zoom,box_zoom,reset,hover")
-p2.circle(x=data['volatility'], y=data['return'],
-          size=[s*30 for s in data['sharpe']],
-          color=Category10[3], fill_alpha=0.6)
+with col2:
+    plt.figure(figsize=(5, 4))
+    sns.scatterplot(data=data, x="volatility", y="return", hue="scenario", size="sharpe",
+                    sizes=(100, 300), palette="Set2", legend="full")
+    for i, row in data.iterrows():
+        plt.text(row['volatility'], row['return'] +
+                 0.002, row['scenario'], ha='center')
+    plt.title("Risk-Return Tradeoff")
+    st.pyplot(plt.gcf())
+    plt.clf()
 
-hover = p2.select_one(HoverTool)
-hover.tooltips = [
-    ("Scenario", "@scenario"),
-    ("Return", "@return"),
-    ("Volatility", "@volatility"),
-    ("Sharpe", "@sharpe")
-]
-st.bokeh_chart(p2, use_container_width=True)
-
-# --- Line chart: MetricB over time ---
-p3 = figure(x_axis_type='datetime', height=350, title="MetricB over Time",
-            x_axis_label='Date', y_axis_label='MetricB')
-for scenario in data["scenario"]:
-    subset = data[data["scenario"] == scenario]
-    p3.line(subset['Date'], subset['MetricB'],
-            line_width=2, legend_label=scenario)
-    p3.circle(subset['Date'], subset['MetricB'], size=8)
-st.bokeh_chart(p3, use_container_width=True)
+# --- Line chart: MetricB over Time ---
+plt.figure(figsize=(8, 4))
+sns.lineplot(data=data, x="Date", y="MetricB",
+             hue="scenario", marker="o", palette="Set2")
+plt.title("MetricB over Time")
+plt.ylabel("MetricB")
+st.pyplot(plt.gcf())
+plt.clf()
 
 # === Assumptions & Risks ===
 st.subheader("Assumptions & Risks")
