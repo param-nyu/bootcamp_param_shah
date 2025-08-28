@@ -1,0 +1,15 @@
+candidates:
+- NVDA
+- AVGO
+- TSM
+- AMD
+- INTC
+- QCOM
+- TXN
+- MRVL
+- MU
+- LRCX
+end: null
+etf: SOXX
+price_field: Adj Close
+start: '2015-01-01'

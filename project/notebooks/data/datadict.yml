@@ -1,0 +1,13 @@
+notes: All prices pulled via yfinance; adjusted close used for return calculations.
+tables:
+  semi_prices_raw:
+    description: Daily Adj Close for selected semiconductor stocks
+    keys:
+    - date
+    - ticker
+    path: data/semi_prices_raw.parquet
+  soxx_prices_raw:
+    description: Daily Adj Close for SOXX
+    keys:
+    - date
+    path: data/soxx_prices_raw.parquet
